@@ -9,15 +9,14 @@ import Register from './Pages/Register/Register';
 import {
   BrowserRouter as Router,
   Switch,
-  Route,
-  Link
+  Route
 } from "react-router-dom";
 
 function App() {
   const user= false;
 
   return (
-    <Router>
+    <Router forceRefresh={true}>
    <TopBar/>
    <Switch>
       <Route exact path="/"><Home/></Route>

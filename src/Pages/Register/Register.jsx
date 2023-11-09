@@ -1,8 +1,10 @@
+import { Link } from "react-router-dom"
 import "./register.css"
 
 
 export default function Register () {
     return (
+        
         <div className="register">
             <span className="registerTitle">Kayıt Ol</span>
             <form className="registerForm">
@@ -14,7 +16,10 @@ export default function Register () {
                 <input type="password" className="registerInput" placeholder="Parolanızı giriniz.."/>
                 <button className="registerButton">Kayıt Ol</button>
             </form>
-                <button className="registerLoginButton">Giriş Yap</button>
+                <button className="registerLoginButton">
+                <Link className="link "to="/login">Giriş Yap</Link> 
+
+                </button>
           </div>
         )
     
